@@ -1,0 +1,20 @@
+<template name="menuTpl">
+	<view class="tab-bar">
+		<view wx:if="{{returnHome}}" class="tab-bar-home" bindtap="url" data-type="relaunch" data-url="/pages/home/index/home_index">
+			<text class="tab-bar-home-text icon-homefill text-grey"></text>
+		</view>
+
+		<view wx:if="{{skin.cate2!==false}}" class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/renthouse/pages/product/index/product_index">
+			<image class="tab-icon" src="/projects/renthouse/images/tabbar/product{{curMenu=='product_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='product_index'?'menu-project':''}}">租房</view>
+		</view>
+
+
+		<view class="tab-bar-item" bindtap="url" data-type="relaunch" data-url="/projects/renthouse/pages/my/index/my_index">
+			<image class="tab-icon" src="/projects/renthouse/images/tabbar/my{{curMenu=='my_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='my_index'?'menu-project':''}}">我的</view>
+		</view>
+
+
+	</view>
+</template>

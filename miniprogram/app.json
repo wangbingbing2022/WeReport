@@ -1,0 +1,69 @@
+{
+	"pages": [
+		"projects/renthouse/pages/product/index/product_index",
+		"projects/renthouse/pages/about/index/about_index",
+		"projects/renthouse/pages/search/search",
+		"projects/renthouse/pages/my/index/my_index",
+		"projects/renthouse/pages/my/reg/my_reg",
+		"projects/renthouse/pages/my/edit/my_edit",
+		"projects/renthouse/pages/my/foot/my_foot",
+		"projects/renthouse/pages/my/fav/my_fav",
+		"projects/renthouse/pages/admin/setup/about/admin_setup_about",
+		"projects/renthouse/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/renthouse/pages/admin/setup/qr/admin_setup_qr",
+		"projects/renthouse/pages/admin/index/home/admin_home",
+		"projects/renthouse/pages/admin/index/login/admin_login",
+		"projects/renthouse/pages/admin/content/admin_content",
+		"projects/renthouse/pages/admin/mgr/log/admin_log_list",
+		"projects/renthouse/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/renthouse/pages/admin/mgr/list/admin_mgr_list",
+		"projects/renthouse/pages/admin/mgr/add/admin_mgr_add",
+		"projects/renthouse/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/renthouse/pages/admin/user/list/admin_user_list",
+		"projects/renthouse/pages/admin/user/detail/admin_user_detail",
+		"projects/renthouse/pages/admin/user/export/admin_user_export",
+		"projects/renthouse/pages/product/detail/product_detail",
+		"projects/renthouse/pages/admin/product/list/admin_product_list",
+		"projects/renthouse/pages/admin/product/add/admin_product_add",
+		"projects/renthouse/pages/admin/product/edit/admin_product_edit",
+		"pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#47CEC6",
+		"navigationBarTitleText": "租房小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#47CEC6",
+		"list": [
+			{
+				"pagePath": "projects/renthouse/pages/product/index/product_index",
+				"text": "租房",
+				"iconPath": "/projects/renthouse/images/tabbar/product.png",
+				"selectedIconPath": "/projects/renthouse/images/tabbar/product_cur.png"
+			},
+			{
+				"pagePath": "projects/renthouse/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/renthouse/images/tabbar/my.png",
+				"selectedIconPath": "/projects/renthouse/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+<view wx:if="{{!_params}}" class="margin-top load loading text-l load-project"></view>
+<block wx:else>
+	<cmpt-comm-list pulldownType="{{['modal']}}" type="product-list" sortMenusDefaultIndex="0" _params="{{_params}}" search="{{search||''}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="product/list" topBottom="120" placeholder="搜索" bind:list="bindCommListCmpt">
+		<view class="main">
+			<view class="house-list">
+				<view class="item" wx:for="{{dataList.list}}" wx:key="key" bindtap="url" data-url="../detail/product_detail?id={{item._id}}">
+					<image class="loading" mode="aspectFill" lazy-load="{{true}}" src="{{item.PRODUCT_OBJ.cover[0]}}" />
+					<view class="right">
+						<view class="line1">
+							<view class="price"><text class="r1">{{item.PRODUCT_OBJ.price}}</text><text class="r2">元</text><text class="r3">/</text><text class="r4">月</text></view>
+							<view class="tag-list">
+								<text class="tag-item" wx:for="{{item.PRODUCT_OBJ.spec}}" wx:key="k" wx:for-item="itm" wx:for-index="idx" wx:if="{{idx<2}}">{{itm}}</text>
+							</view>
+						</view>
+						<view class="line2 content-cut-one">{{item.PRODUCT_TITLE}}</view>
+						<view class="line3 content-cut-one">{{item.PRODUCT_OBJ.type}}/{{item.PRODUCT_OBJ.mianji}}㎡/{{item.PRODUCT_OBJ.area}} {{item.PRODUCT_OBJ.jiedao}}</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+
+	<block wx:if="{{skin.IS_SUB}}">
+		<import src="../../tpls/menu_tpl.wxml" />
+		<template is="menuTpl" data="{{curMenu:'product_index',returnHome:false}}" />
+	</block>
+
+</block>
