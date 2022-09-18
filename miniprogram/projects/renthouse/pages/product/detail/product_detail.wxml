@@ -75,7 +75,7 @@
 
 		<view class="detail-title margin-top">房屋地址</view>
 		<view class="detail" style="padding:0">
-			<map class="map" enable-zoom="{{false}}" bindtap="bindMapTap" enable-poi longitude="{{product.PRODUCT_ADDRESS.longitude}}" latitude="{{product.PRODUCT_ADDRESS.latitude}}" markers="{{markers}}" scale="{{15}}" show-location></map>
+			<map class="map" enable-zoom="{{false}}" bindmarkertap="bindMapTap" bindtap="bindMapTap" enable-poi longitude="{{product.PRODUCT_ADDRESS.longitude}}" latitude="{{product.PRODUCT_ADDRESS.latitude}}" markers="{{markers}}" scale="{{15}}" show-location></map>
 		</view>
 	</view>
 

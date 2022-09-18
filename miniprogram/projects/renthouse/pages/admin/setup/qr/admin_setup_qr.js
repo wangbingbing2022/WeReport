@@ -44,7 +44,7 @@ Page({
 			return;
 		}
 
-		let path = pageHelper.fmtURLByPID('/pages/default/index/default_index');
+		let path = pageHelper.fmtURLByPID('/pages/product/index/product_index');
 		let params = {
 			path 
 		};
