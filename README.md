@@ -1,7 +1,8 @@
 ## 功能介绍 
 租房小程序方便运营者打造自己的小程序优势，及时更新核实租赁信息，保障信息的准确性，例如：大概的地址、租金具体多少、条件、优点和缺点; 有拍摄的照片，减少用户实地看房时间，又能降低人力成本，一举双得。同时通过小程序实地推广，让周边顾客了解你，形成互动，不用每天主动找寻信息，转化潜在用户，免费提高自我展示。还能为你还可以沉淀一批房产投资者。有好的房源，都能及时从小程序上获悉，不用天天打电话联系，给自己提供潜在业务。采用腾讯提供的小程序云开发解决方案，无须服务器和域名。
  
-![image](https://user-images.githubusercontent.com/90035204/190912828-a1b4d6eb-a349-4f1f-83a4-c7042c91c329.png)
+ ![image](https://user-images.githubusercontent.com/90035204/190927884-b7d5d339-310c-4265-8f93-91ed3c946156.png)
+
 
 # 功能图
 ![image](https://user-images.githubusercontent.com/90035204/190912842-a878c309-83e4-48ab-adb1-bc77dc0a4f74.png)
@@ -25,7 +26,8 @@
 
 
 ## 演示 
- ![image](https://user-images.githubusercontent.com/90035204/190912849-23e50daa-b7f0-439c-926f-4301a49d554f.png)
+ ![image](https://user-images.githubusercontent.com/90035204/190927887-9b89a5af-2cde-4e87-96aa-1d2bb7d6606f.png)
+
 
 
 ## 安装
