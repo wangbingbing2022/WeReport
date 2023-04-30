@@ -3,7 +3,7 @@
 		<image mode="aspectFill" src="../../../images/default_index_bg.jpg" />
 	</view>
 
-	<view wx:if="{{!isLogin}}" bindtap="url" data-type="relaunch" data-url="../../my/edit/my_edit" class="authen">
+	<view wx:if="{{!isLogin}}" bindtap="url"  data-url="../../my/edit/my_edit" class="authen">
 		<view class="inner"><text class="icon-safe margin-right-xs"></text>您尚未认证业主身份，点此快速进行注册认证</view>
 	</view>
 
@@ -11,7 +11,7 @@
  
 		<view class="menu card-project"> 
 
-			<view wx:for="{{typeList}}" wx:key="k" bindtap="url" data-url="../../task/index/task_index?type={{item.en}}" class="item">
+			<view wx:for="{{typeList}}" wx:key="k" bindtap="url" data-type="relaunch" data-url="../../task/index/task_index?type={{item.en}}" class="item">
 				<view class="item-inner">
 					<view class="img ">
 						<image src="../../../images/menu/{{index}}.png" />
