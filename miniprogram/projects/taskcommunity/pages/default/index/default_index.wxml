@@ -3,7 +3,7 @@
 		<image mode="aspectFill" src="../../../images/default_index_bg.jpg" />
 	</view>
 
-	<view wx:if="{{!isLogin}}" bindtap="url" data-url="../../my/edit/my_edit" class="authen">
+	<view wx:if="{{!isLogin}}" bindtap="url" data-type="relaunch" data-url="../../my/edit/my_edit" class="authen">
 		<view class="inner"><text class="icon-safe margin-right-xs"></text>您尚未认证业主身份，点此快速进行注册认证</view>
 	</view>
 
